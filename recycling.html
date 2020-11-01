@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Recycling</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">  
+    
+</head>
+
+	
+<body>	
+	<ul id="navbar">
+		<a href="#"><img class="logo" src="images/logo.jpg" alt="logo" ></a>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown"> <!-- dropdown will display for the facts hover -->
+			<a class="dropbtn" href="facts.html">Facts</a> 
+			<div class="dropdown-content">
+				<a href="facts.html#what">What</a> <!-- Will link to what part of facts page -->
+				<a href="facts.html#who">Who</a> <!-- Will link to who part of facts page -->
+				<a href="facts.html#when">When</a> <!-- Will link to why part of facts page-->
+			</div>
+		</li>
+		<li><a href="affects.html">Affects</a></li> <!-- Will link to about page-->
+		<li><a href="local.html">Local</a></li> <!-- Will link to local page-->
+		<li><a href="organisations.html">Organisations</a></li> <!-- Will link to organisations page-->
+		<li><a class="active" href="recycling.html">Recycling</a></li> <!-- Will link to recycling page-->
+	</ul>
+	
+<img  src="images/r1.jpg" alt="plastics being recycled" width="100%"> <!-- Image: contains alt text which means that people will see a description if they can't see the image. The width, I have set as a percentage so that it takes up the whole width of the screen -->
+	
+	
+<div class="content">
+	<h1> Recycling</h1>
+	 <p>You have probably heard of it before, but do you actually know what recycling is?
+	    Recycling is the breakdown of waste into new materials. This is good for the environment because it means that less new plastic needs to be produced
+		because more old plastics are being recycled. Everyone can recycle, and this is why it is so important that people understand the impact of
+		simply putting a plastic bottle into a recycling bin.</p>
+</div>
+	
+
+	
+<div class="section3">
+  <img  src="images/recycling.png" alt="what can/cannot be recycled?" style="height:850px;">
+</div>
+
+<div class="content">
+	<h2>How does recycling stop this issue?</h2>
+	 <p>Recycling helps this issue because it means that plastics are reused. This reduces the amount of new plastics that are created and potential for them to be in the ocean. Recycling is a solution that everyone can
+	 be involved in, and New Zealand is already actively trying to encourage households to recycle, by providing large recycling bins in big cities. If everyone chips in, and recycles all their recyclable plastic, then in the long run, New
+	 Zealand will be cleaner, and marine animals will not suffer as much.</p>
+	 <br><br>
+	<h2>What else can I do to stop this issue?</h2>
+	 <p>There are many things that you can do to help, such as joining beach clean-up movements. Other ways that you can help is by changing some of your products at home. 
+	 This can include using reusable bags rather than single use ones, and buying products with less packaging. Other ways, is to stop littering and making sure that the streets are clean, 
+	 so there is not a big risk of it blowing into the oceans.</p>
+</div>
+
+	<br><br><br><br><br><br>
+<div id="footer">
+  <a href="#default" id="logo">Harriet Melton 2020&#169;</a>
+  </div>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&and;</button>
+
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>

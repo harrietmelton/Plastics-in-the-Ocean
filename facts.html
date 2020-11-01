@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Facts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">  
+    
+</head>
+
+	
+<body>	
+	<ul id="navbar">
+		<a href="#"><img class="logo" src="images/logo.jpg" alt="logo" ></a>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown"> <!-- dropdown will display for the facts hover -->
+			<a class="dropbtn active" href="facts.html">Facts</a> 
+			<div class="dropdown-content">
+				<a href="#what">What</a> <!-- Will link to what part of facts page -->
+				<a href="#who">Who</a> <!-- Will link to who part of facts page -->
+				<a href="#when">when</a> <!-- Will link to why part of facts page-->
+			</div>
+		</li>
+		<li><a href="affects.html">Affects</a></li> <!-- Will link to about page-->
+		<li><a href="local.html">Local</a></li> <!-- Will link to local page-->
+		<li><a href="organisations.html">Organisations</a></li> <!-- Will link to organisations page-->
+		<li><a href="recycling.html">Recycling</a></li> <!-- Will link to recycling page-->
+	</ul>
+	
+<img  src="images/f1.jpg" alt="plastics on beaches" width="100%"> <!-- Image: contains alt text which means that people will see a description if they can't see the image. The width, I have set as a percentage so that it takes up the whole width of the screen -->
+	
+	
+<div class="content">
+	<h1> Facts</h1>
+	 <p>Plastic is the ocean is an un well-known issue, here are some answers to common questions:</p>
+</div>
+	
+<button class="collapsible">Who</button>
+<div class="content1" id="who">
+  <p>You may not know it, but everyone on this earth has caused plastic pollution. Plastic is very strong, easy to get, and cheap. It is always available for us to purchase. Most supermarket products are wrapped in plastic, even fresh fruit 
+and vegetables. This makes it nearly impossible to avoid buying plastic, which shows how big this issue really is. There are always new plastics being created in factories around the world, meaning that there are more plastics that have 
+the potential to go into the ocean and harm ocean life. Plastics that we put in the rubbish bun don't necessarily go straight to the landfill, some of it often blows out of bins, and off trucks. This wind then causes the plastic to float to
+oceans or rivers that lead into oceans.
+</p>
+</div>
+
+<button class="collapsible">What</button>
+<div class="content1" id="what">
+  <p>Plastics from food packaging, and containers can end up in the ocean Plastics in the ocean may not be a well known issue, but it has major effects on the environment. From sea creatures, to humans, everyone is affected by it, and you 
+may not even know it. Vulnerable wildlife see a piece of colourful plastic, floating in the ocean as a piece of food, and eat it. This not only causes them to choke, but it also accumulates in their stomach. Humans who hunt these animals,
+ will find that their food is contaminated with plastic which makes them susceptible to diseases.
+</p>
+</div>
+<button class="collapsible">When</button>
+<div class="content1" id="when">
+  <p>This issue has been happening for a very long time. Before people thought it was an issue, people were littering, and over time the plastics accumulated in the ocean. By the time that people were aware of the issue, there was alread
+  y so much plastics in the ocean, that it could have started decades or even centuries before. It is still an ongoing issue now, and will be for many years to come, so that is why action needs to be taken now. We do not know how much 
+  plastic is in the ocean, but there is an estimated 150 Million metric tonnes of it, and 8 million metric tonnes, are added, each year.</p>
+  <img  src="images/graph.png" alt="Graph of projected plastics in the ocean">
+</div>
+<button class="collapsible">Where</button>
+<div class="content1" id="where">
+  <p>Asia is the country that is the cause of most plastics in the ocean. Not only because of it's huge population, but the many rivers that open out into the ocean. Riverside settlements and towns have high chances of getting 
+  plastics in the ocean because wind can easily direct the litter into the river, and with river currents, it ends up in the ocean.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<div class="content">
+<h2> The great pacific garbage patch</h2>
+ <p>The great pacific garbage patch is a build up of plastics in the ocean from gyres. Gyres are circular ocean currents. The Great Pacific Garbage patch is the largest Gyre in the world. “The GPGP covers an estimated surface area of 1.6 million 
+square kilometres, an area twice the size of Texas or three times the size of France.” This is one of the main areas that plastic cleanup organisations focus on as well, because it grows bigger each year.
+</p>
+</div>
+	<br><br><br><br><br><br>
+<div id="footer">
+  <a href="#default" id="logo">Harriet Melton 2020&#169;</a>
+  </div>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&and;</button>
+
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>

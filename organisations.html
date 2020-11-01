@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Organisations</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">  
+    
+</head>
+
+	
+<body>	
+	<ul id="navbar">
+		<a href="#"><img class="logo" src="images/logo.jpg" alt="logo" ></a>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown"> <!-- dropdown will display for the facts hover -->
+			<a class="dropbtn" href="facts.html">Facts</a> 
+			<div class="dropdown-content">
+				<a href="facts.html#what">What</a> <!-- Will link to what part of facts page -->
+				<a href="facts.html#who">Who</a> <!-- Will link to who part of facts page -->
+				<a href="facts.html#when">When</a> <!-- Will link to why part of facts page-->
+			</div>
+		</li>
+		<li><a href="affects.html">Affects</a></li> <!-- Will link to about page-->
+		<li><a href="local.html">Local</a></li> <!-- Will link to local page-->
+		<li><a class="active" href="organisations.html">Organisations</a></li> <!-- Will link to organisations page-->
+		<li><a href="recycling.html">Recycling</a></li> <!-- Will link to recycling page-->
+	</ul>
+	
+<img  src="images/o1.jpg" alt="Boat in the ocean" width="100%"> <!-- Image: contains alt text which means that people will see a description if they can't see the image. The width, I have set as a percentage so that it takes up the whole width of the screen -->
+	
+<section>	
+<div class="content2">
+	<h1> Organisations</h1>
+	 <br><br>
+</div>
+	
+<div class="card column1">
+  <a href="https://theoceancleanup.com/"><img src="images/o2.jpg" alt="The Ocean Clean Up" style="width=350px;height:200px;"></a>
+  <div class="container">
+    <h4><b>The Ocean Cleanup</b></h4>  
+  </div>
+</div>
+<div class="column1 card">
+  <a href="https://oceanconservancy.org/"><img src="images/o3.jpg" alt="Ocean Conservancy" style="width=350px;height:200px;"></a>
+  <div class="container">
+    <h4><b>The Ocean Conservancy</b></h4> 
+  </div>
+</div>
+<div class="column1 card">
+  <a href="https://www.4ocean.com/"><img src="images/4Ocean.png" alt="4Ocean logo" style="width=350px;height:200px;"></a>
+  <div class="container">
+    <h4><b>4Ocean</b></h4> 
+  </div>
+</div>
+</section>
+
+<br><br><br><br><br><br><br>
+
+
+
+<div class="content">
+<p>
+ There are many organisations that focus on cleaning the ocean from plastics such as the ocean clean-up and 4ocean. They help by clearing floating plastics and recycling them into reusable items to sell to customers and promote this problem. 
+ This money goes back into the business to help fund more of their cleanup operation.
+    <br><br> <img src="images/o4.jpg" alt="Plastics collector" style="width=650px;height:500px;"> <br><br>
+ The things that are already being done to help stop plastic pollution are methods that do use digital technology’s such as “skimmers” from 4Ocean that are river boats that gather floating rubbish in their
+ “arms”. The Ocean Cleanup has developed a new “Interceptor” Which forces floating rubbish onto a conveyer belt and places it in dumpsters evenly, which makes it easy to be driven to a recycling center. They 
+ also have another concept, which collects plastic in the ocean. A floating arch follows the drift of the ocean, however is slower because there is a parachute attached to it, so it collects ocean plastic, and 
+ then a boat will later take it away. 
+</p>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div id="footer">
+  <a href="#default" id="logo">Harriet Melton 2020&#169;</a>
+  </div>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&and;</button>
+
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>

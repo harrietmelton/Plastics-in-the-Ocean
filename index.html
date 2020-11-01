@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">  
+    
+</head>
+
+	
+<body>	
+	<ul id="navbar">
+		<a href="#"><img class="logo" src="images/logo.jpg" alt="logo" ></a>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li class="dropdown"> <!-- dropdown will display for the facts hover -->
+			<a class="dropbtn" href="facts.html">Facts</a> 
+			<div class="dropdown-content">
+				<a href="facts.html#what">What</a> <!-- Will link to what part of facts page -->
+				<a href="facts.html#who">Who</a> <!-- Will link to who part of facts page -->
+				<a href="facts.html#when">When</a> <!-- Will link to why part of facts page-->
+			</div>
+		</li>
+		<li><a href="affects.html">Affects</a></li> <!-- Will link to about page-->
+		<li><a href="local.html">Local</a></li> <!-- Will link to local page-->
+		<li><a href="organisations.html">Organisations</a></li> <!-- Will link to organisations page-->
+		<li><a href="recycling.html">Recycling</a></li> <!-- Will link to recycling page-->
+	</ul>
+	
+<img  src="images/plastics_on_the_beach_crop.jpg" alt="plastics on beaches" width="100%"> <!-- Image: contains alt text which means that people will see a description if they can't see the image. The width, I have set as a percentage so that it takes up the whole width of the screen -->
+	
+	
+<div class="content">
+	<h1> Plastics in the ocean</h1>
+	 <p>Every year, millions of tons of plastic enter the oceans, of which the majority spills out from rivers. A portion of this plastic travels to ocean garbage patches, 
+	 getting caught in a vortex of circulating currents. If no action is taken, the plastic will increasingly impact our ecosystems, health, and economies.</p>
+</div>
+	
+	<br>
+	
+	<br>
+	
+	<br>
+	
+<section>
+	
+ <div class="flip-card column">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="images/seal.jpg" alt="Seal tangled in plastic" style="width=450px;height:300px;">
+     </div>
+     <div class="flip-card-back">
+       <h2>Affects</h2> 
+       <p>Plastics in the ocean affect <br> many marine animals and environments</p> 
+		 <button class="btn"><a href="affects.html">Click here for more information</a></button>
+     </div>
+   </div>
+ </div>
+	
+ <div class="flip-card column">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="images/river_cleaner_toc.jpg" alt="INTERCEPTOR™ 002" style="width=450px;height:300px;">
+     </div>
+     <div class="flip-card-back">
+       <h2>Organisations</h2> 
+       <p>There are many organisations that are trying <br> to stop the issue of plastic pollution</p> 
+		 <button class="btn"><a href="organisations.html">Click here for more information</a></button>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card column">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="images/beach.jpg" alt="Plastics on a beach" style="width=450px;height:300px;">
+     </div>
+     <div class="flip-card-back">
+       <h2>Recycling</h2> 
+       <p>What can you recycle? <br> does it help stop the issue of plastic pollution</p> 
+		 <button class="btn"><a href="recycling.html">Click here for more information</a></button>
+     </div>
+   </div>
+ </div>
+</section>
+
+<div class="content">
+ <p>This issue is something that we should be seriously thinking about because we are the people that can make change happen. From little things like recycling and putting litter in bins, we can all make a difference and reduce the amount of 
+ plastic that is entering our oceans. We are the only people that can stop this issue, so we must do as much as we can to solve it.
+</p>
+</div>
+<br><br><br><br><br><br>
+<div id="footer">
+  <a href="#default" id="logo">Harriet Melton 2020&#169; </a>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&and;</button>
+
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>
