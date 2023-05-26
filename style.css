@@ -161,8 +161,8 @@ section {
 	background-color: darkblue; /* colour of section */
 	height: 375px; /* set height of section */
 	padding: 25px; 
-	padding-left: 200px; 
-	padding-right: 200px;
+	padding-left: 100px; 
+	padding-right: 100px;
 	color: white;
 }
 
